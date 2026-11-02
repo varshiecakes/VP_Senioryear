@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Quicksand:wght@600;700&display=swap');
+
 body {
-    font-family: "Poppins", "Nunito", sans-serif;
-    background: #fffdf9;
-    color: #4a4543;
+    font-family: "Quicksand", "Plus Jakarta Sans", sans-serif;
+    background: linear-gradient(135deg, #fff5f8 0%, #ffeaf2 100%);
+    color: #6d597a;
     margin: 0;
     padding: 50px 20px;
 }
 
-/* Cozy Retro-Modern Container */
+/* Aesthetic Cozy Soft Card */
 .container {
     max-width: 850px;
     margin: auto;
-    background: #ffffff;
-    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 35px;
     padding: 50px;
-    box-shadow: 0 15px 35px rgba(255, 183, 3, 0.08);
-    border: 3px solid #ffeaa7;
+    box-shadow: 0 20px 40px rgba(255, 182, 193, 0.35);
+    border: 3px solid #ffccd5;
 }
 
 header {
@@ -23,35 +26,37 @@ header {
 }
 
 h1 {
-    color: #ff6b81;
-    font-size: 2.5rem;
+    color: #ff4d6d;
+    font-size: 2.8rem;
     font-weight: 800;
     letter-spacing: -0.5px;
     margin-bottom: 8px;
+    text-shadow: 2px 2px 0px #ffe5ec;
 }
 
 h2 {
-    color: #e1b12c;
-    border-bottom: 2px dashed #ffeaa7;
+    color: #c9184a;
+    border-bottom: 2px dashed #ffb3c1;
     padding-bottom: 10px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
-/* Soft Rounded Square Profile Picture */
+/* Cute Soft Profile Picture */
 .profile-pic {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 32px;
-    border: 4px solid #ffeaa7;
-    box-shadow: 0 8px 20px rgba(255, 107, 129, 0.15);
+    border-radius: 50px;
+    border: 4px solid #ffb3c1;
+    box-shadow: 0 10px 25px rgba(255, 77, 109, 0.2);
     margin: 20px 0;
-    transition: transform 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .profile-pic:hover {
-    transform: scale(1.04) rotate(2deg);
+    transform: scale(1.06) rotate(-3deg);
+    border-color: #ff4d6d;
 }
 
 nav {
@@ -59,37 +64,38 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 
-/* Chunky Cozy Buttons */
+/* Pill Soft Buttons */
 nav a {
     display: inline-block;
-    padding: 10px 22px;
+    padding: 12px 24px;
     text-decoration: none;
-    color: #4a4543;
+    color: #ff4d6d;
     font-weight: 700;
-    font-size: 0.9rem;
-    border-radius: 14px;
-    background: #fff9e6;
-    border: 2px solid #ffeaa7;
+    font-size: 0.95rem;
+    border-radius: 50px;
+    background: #fff0f5;
+    border: 2px solid #ffccd5;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
     transition: all 0.25s ease;
 }
 
 nav a:hover {
-    background: #ff6b81;
+    background: #ff4d6d;
     color: #ffffff;
-    border-color: #ff6b81;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(255, 107, 129, 0.25);
+    border-color: #ff4d6d;
+    transform: translateY(-3deg);
+    box-shadow: 0 8px 20px rgba(255, 77, 109, 0.35);
 }
 
 section {
     margin: 30px 0;
     padding: 28px;
-    background: #fffdf5;
-    border-radius: 20px;
-    border: 2px solid #fff3cd;
+    background: #fff5f8;
+    border-radius: 24px;
+    border: 2px solid #ffccd5;
 }
 
 ul {
@@ -99,18 +105,18 @@ ul {
 li {
     margin-bottom: 12px;
     line-height: 1.6;
-    color: #59524e;
+    color: #6d597a;
 }
 
 a {
-    color: #ff6b81;
+    color: #ff4d6d;
     text-decoration: none;
     font-weight: 700;
     transition: opacity 0.2s ease;
 }
 
 a:hover {
-    opacity: 0.75;
+    opacity: 0.8;
     text-decoration: underline;
 }
 
@@ -118,7 +124,7 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
-    color: #a69888;
+    color: #b5838d;
     font-size: 0.85rem;
-    border-top: 2px dashed #ffeaa7;
+    border-top: 2px dashed #ffb3c1;
 }
