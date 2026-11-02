@@ -1,25 +1,20 @@
 body {
-    font-family: "Quicksand", "Nunito", sans-serif;
-    background: linear-gradient(135deg, #fff3b0 0%, #ffd6e0 50%, #ffb3c6 100%);
-    background-attachment: fixed;
+    font-family: "Poppins", "Nunito", sans-serif;
+    background: #fffdf9;
+    color: #4a4543;
     margin: 0;
-    padding: 40px 20px;
-    color: #6d4c5d;
+    padding: 50px 20px;
 }
 
-/* Cute Rounded Glass Container */
+/* Cozy Retro-Modern Container */
 .container {
-    max-width: 900px;
+    max-width: 850px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 35px;
-    padding: 45px;
-    box-shadow: 
-        0 20px 40px rgba(255, 143, 177, 0.2),
-        0 0 0 2px rgba(255, 255, 255, 0.9) inset;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 3px solid rgba(255, 255, 255, 0.8);
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 50px;
+    box-shadow: 0 15px 35px rgba(255, 183, 3, 0.08);
+    border: 3px solid #ffeaa7;
 }
 
 header {
@@ -28,68 +23,73 @@ header {
 }
 
 h1 {
-    color: #ff4785;
-    text-shadow: 2px 2px 0px #ffffff;
-    font-size: 2.8rem;
-    letter-spacing: 0.5px;
-    font-weight: 900;
+    color: #ff6b81;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
 }
 
 h2 {
-    color: #fca311;
-    border-bottom: 3px dotted rgba(252, 163, 17, 0.4);
-    padding-bottom: 8px;
-    font-size: 1.6rem;
+    color: #e1b12c;
+    border-bottom: 2px dashed #ffeaa7;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
-/* Trendy Soft-Border Profile Picture */
+/* Soft Rounded Square Profile Picture */
 .profile-pic {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #ffffff;
-    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+    border-radius: 32px;
+    border: 4px solid #ffeaa7;
+    box-shadow: 0 8px 20px rgba(255, 107, 129, 0.15);
     margin: 20px 0;
     transition: transform 0.3s ease;
 }
 
 .profile-pic:hover {
-    transform: scale(1.06) rotate(-3deg);
+    transform: scale(1.04) rotate(2deg);
 }
 
 nav {
-    margin-top: 20px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* Aesthetic Pastel Pill Buttons */
+/* Chunky Cozy Buttons */
 nav a {
     display: inline-block;
-    margin: 6px;
     padding: 10px 22px;
     text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 0.95rem;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #ffd166 0%, #ff9f1c 100%);
-    box-shadow: 0 6px 15px rgba(255, 159, 28, 0.3);
-    transition: all 0.3s ease;
+    color: #4a4543;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 14px;
+    background: #fff9e6;
+    border: 2px solid #ffeaa7;
+    transition: all 0.25s ease;
 }
 
 nav a:hover {
-    background: linear-gradient(135deg, #ff70a6 0%, #ff4785 100%);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(255, 71, 133, 0.4);
+    background: #ff6b81;
+    color: #ffffff;
+    border-color: #ff6b81;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 107, 129, 0.25);
 }
 
 section {
     margin: 30px 0;
-    padding: 26px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.15);
-    border: 2px solid rgba(255, 255, 255, 0.9);
+    padding: 28px;
+    background: #fffdf5;
+    border-radius: 20px;
+    border: 2px solid #fff3cd;
 }
 
 ul {
@@ -99,17 +99,18 @@ ul {
 li {
     margin-bottom: 12px;
     line-height: 1.6;
+    color: #59524e;
 }
 
 a {
-    color: #ff70a6;
+    color: #ff6b81;
     text-decoration: none;
     font-weight: 700;
-    transition: color 0.2s ease;
+    transition: opacity 0.2s ease;
 }
 
 a:hover {
-    color: #ff4785;
+    opacity: 0.75;
     text-decoration: underline;
 }
 
@@ -117,32 +118,7 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
-    color: #a87d91;
-    font-size: 0.9rem;
-    border-top: 2px dashed rgba(255, 182, 193, 0.5);
-}
-
-/* Cute Floating Blobs */
-body::before,
-body::after {
-    content: "";
-    position: fixed;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,209,102,0.3) 100%);
-    z-index: -1;
-    pointer-events: none;
-}
-
-body::before {
-    width: 250px;
-    height: 250px;
-    top: -50px;
-    right: -50px;
-}
-
-body::after {
-    width: 200px;
-    height: 200px;
-    bottom: -30px;
-    left: -30px;
+    color: #a69888;
+    font-size: 0.85rem;
+    border-top: 2px dashed #ffeaa7;
 }
